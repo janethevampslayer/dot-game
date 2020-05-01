@@ -24,11 +24,6 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping("home")
-    public String displayUserHome() {
-        return "user-home";
-    }
-
     @GetMapping("create")
     public String displayCreateNewUserForm(Model model) {
         model.addAttribute(new User());
