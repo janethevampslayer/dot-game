@@ -1,13 +1,14 @@
 package org.launchcode.dotgame.models;
 
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.List;
-import java.util.Objects;
 
 @Entity
 public class User {
@@ -16,29 +17,42 @@ public class User {
     @GeneratedValue
     int id;
 
+    @NotNull
     @NotBlank(message = "Name is required")
     @Size(min = 1, max = 150, message = "Name must be between 1 and 150 characters")
-    private String name;
+    private String username;
 
-    public User(int id, @NotBlank(message = "Name is required") @Size(min = 1, max = 150, message = "Name must be between 1 and 150 characters") String name) {
+    @NotNull
+    private String pwHash;
+
+    private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+
+    public User(int id, @NotNull @NotBlank(message = "Name is required") @Size(min = 1, max = 150, message = "Name must be between 1 and 150 characters") String username, @NotNull String password) {
         this.id = id;
-        this.name = name;
+        this.username = username;
+        this.pwHash = encoder.encode(password);
     }
 
     public User() {};
+
+    public User(String username, String password) {
+        this.username = username;
+        this.pwHash = encoder.encode(password);
+    }
 
     public int getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-
-
+    public boolean isMatchingPassword(String password) {
+        return encoder.matches(password, pwHash);
+    }
 }
