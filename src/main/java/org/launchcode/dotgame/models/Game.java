@@ -6,7 +6,7 @@ public class Game {
 
     private int addendOne;
     private int addendTwo;
-    private int sum;
+    private int sum = addendOne + addendTwo;
     private int[] gameSet = new int[3];
 
     private void generateAddends() {
