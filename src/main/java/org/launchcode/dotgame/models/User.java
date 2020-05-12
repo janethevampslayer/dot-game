@@ -18,8 +18,6 @@ public class User {
     int id;
 
     @NotNull
-    @NotBlank(message = "Name is required")
-    @Size(min = 1, max = 150, message = "Name must be between 1 and 150 characters")
     private String username;
 
     @NotNull
@@ -27,7 +25,7 @@ public class User {
 
     private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    public User(int id, @NotNull @NotBlank(message = "Name is required") @Size(min = 1, max = 150, message = "Name must be between 1 and 150 characters") String username, @NotNull String password) {
+    public User(int id, String username, String password) {
         this.id = id;
         this.username = username;
         this.pwHash = encoder.encode(password);

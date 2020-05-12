@@ -54,6 +54,9 @@ public class AuthenticationController {
     @PostMapping("/register")
     public String processRegisterForm(@ModelAttribute @Valid RegisterFormDTO registerFormDTO, Errors errors, HttpServletRequest request, Model model) {
 
+        model.addAttribute(new LoginFormDTO());
+        model.addAttribute("title", "Log In");
+
         if (errors.hasErrors()) {
             model.addAttribute("title", "Register");
             return "register";
@@ -80,7 +83,7 @@ public class AuthenticationController {
         userRepository.save(newUser);
         setUserInSession(request.getSession(), newUser);
 
-        return "/login";
+        return "login";
     }
 
     @GetMapping("/login")
@@ -118,5 +121,11 @@ public class AuthenticationController {
         setUserInSession(request.getSession(), theUser);
 
         return "redirect:";
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest request) {
+        request.getSession().invalidate();
+        return "redirect:/login";
     }
 }
