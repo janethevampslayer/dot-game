@@ -20,7 +20,12 @@ public class UserController {
     @GetMapping("home")
     public String displayUserHome() {
 
-        return "user/user-home";
+        return "user/home";
+    }
+
+    @GetMapping("savedGames")
+    public String displaySavedGames() {
+        return "user/saved-games";
     }
 
 
