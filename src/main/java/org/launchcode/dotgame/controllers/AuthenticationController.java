@@ -55,7 +55,7 @@ public class AuthenticationController {
     public String processRegisterForm(@ModelAttribute @Valid RegisterFormDTO registerFormDTO, Errors errors, HttpServletRequest request, Model model) {
 
         model.addAttribute(new LoginFormDTO());
-        model.addAttribute("title", "Log In");
+
 
         if (errors.hasErrors()) {
             model.addAttribute("title", "Register");
@@ -83,7 +83,7 @@ public class AuthenticationController {
         userRepository.save(newUser);
         setUserInSession(request.getSession(), newUser);
 
-        return "login";
+        return "redirect:login";
     }
 
     @GetMapping("/login")

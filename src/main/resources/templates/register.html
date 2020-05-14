@@ -5,7 +5,7 @@
     <title></title>
 </head>
 <body>
-<form method="post">
+<form th:method="post">
     <div>
         <label>Username:
             <input th:field="${registerFormDTO.username}">
@@ -24,7 +24,7 @@
         </label>
     </div>
 
-    <input type="submit" value="Register">
+    <input href="/login" type="submit" value="Register">
 </form>
 </body>
 </html>
