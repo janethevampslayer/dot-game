@@ -6,13 +6,13 @@
     display: grid;
   /* 48 auto columns */
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-gap: 4px;
-    background-color: #2196F3;
-    padding: 4px;
-}
+    grid-gap: 2px;
+    background-color: black;
+    padding: 2px;
+ }
 
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     text-align: center;
     padding: 20px 0;
     font-size: 15px;
@@ -23,6 +23,7 @@
     grid-column-end: 11;
     grid-row-start: 1;
     grid-row-end: 4;
+    border-right: 2px solid black;
 }
 
 .hundreds {
@@ -30,6 +31,7 @@
     grid-column-end: 21;
     grid-row-start: 1;
     grid-row-end: 4;
+    border-right: 2px solid black;
 }
 
 .tens {
@@ -37,6 +39,7 @@
     grid-column-end: 31;
     grid-row-start: 1;
     grid-row-end: 4;
+    border-right: 2px solid black;
 }
 
 .units {
@@ -44,6 +47,7 @@
     grid-column-end: 41;
     grid-row-start: 1;
     grid-row-end: 4;
+    border-right: 2px solid black;
 }
 
 .blank-head {
@@ -56,11 +60,14 @@
 .addend-one {
     grid-column-start: 41;
     grid-column-end: 49;
+    overflow: hidden;
+
 }
 
 .addend-two {
     grid-column-start: 41;
     grid-column-end: 49;
+    overflow: hidden;
 }
 
 .addend-three {
@@ -108,6 +115,7 @@
     grid-column-end: 11;
     grid-row-start: 14;
     grid-row-end: 16;
+    border-right: 2px solid black;
 }
 
 .hundreds-carry-over {
@@ -115,6 +123,7 @@
     grid-column-end: 21;
     grid-row-start: 14;
     grid-row-end: 16;
+    border-right: 2px solid black;
 }
 
 .tens-carry-over {
@@ -122,6 +131,7 @@
     grid-column-end: 31;
     grid-row-start: 14;
     grid-row-end: 16;
+    border-right: 2px solid black;
 }
 
 .units-carry-over {
@@ -129,6 +139,7 @@
     grid-column-end: 41;
     grid-row-start: 14;
     grid-row-end: 16;
+    border-right: 2px solid black;
 }
 
 .blank-foot {
@@ -136,6 +147,7 @@
     grid-column-end: 49;
     grid-row-start: 14;
     grid-row-end: 16;
+    border-right: 2px solid black;
 }
 
 .thousands-total {
@@ -143,6 +155,7 @@
     grid-column-end: 11;
     grid-row-start: 16;
     grid-row-end: 19;
+    border-right: 2px solid black;
 }
 
 .hundreds-total {
@@ -150,6 +163,7 @@
     grid-column-end: 21;
     grid-row-start: 16;
     grid-row-end: 19;
+    border-right: 2px solid black;
 }
 
 .tens-total {
@@ -157,6 +171,7 @@
     grid-column-end: 31;
     grid-row-start: 16;
     grid-row-end: 19;
+    border-right: 2px solid black;
 }
 
 .units-total {
@@ -164,6 +179,7 @@
     grid-column-end: 41;
     grid-row-start: 16;
     grid-row-end: 19;
+    border-right: 2px solid black;
 }
 
 .sum-total {
@@ -173,6 +189,9 @@
     grid-row-end: 19;
 }
 
+.item-ten {
+    border-right: 2px solid black;
+}
 .reset-button {
 
 }
