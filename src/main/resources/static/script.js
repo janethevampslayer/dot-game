@@ -1,7 +1,18 @@
 var gridItem = document.getElementsByClassName("grid-item");
+var itemTen = document.getElementsByClassName("item-ten");
 
 for (var i = 0; i < gridItem.length; i++) {
     gridItem[i].addEventListener("click", function() {
+        if (this.style.backgroundColor != "black") {
+            this.style.backgroundColor = "black";
+        } else if (this.style.backgroundColor = "black") {
+            this.style.backgroundColor = "";
+        }
+    })
+}
+
+for (var i = 0; i < itemTen.length; i++) {
+    itemTen[i].addEventListener("click", function() {
         if (this.style.backgroundColor != "black") {
             this.style.backgroundColor = "black";
         } else if (this.style.backgroundColor = "black") {
@@ -16,6 +27,12 @@ document.getElementById("reset-button").addEventListener("click", function() {
         gridItem[i].style.backgroundColor = "";
         }
     }
+
+    for (var i = 0; i < itemTen.length; i++) {
+            if (itemTen[i].style.backgroundColor = "black") {
+            itemTen[i].style.backgroundColor = "";
+            }
+        }
 })
 
 
