@@ -112,7 +112,7 @@
     grid-column-end: 49;
 }
 
-.thousands-carry-over {
+.thousands-carryover {
     grid-column-start: 1;
     grid-column-end: 11;
     grid-row-start: 14;
@@ -120,7 +120,7 @@
     border-right: 2px solid black;
 }
 
-.hundreds-carry-over {
+.hundreds-carryover {
     grid-column-start: 11;
     grid-column-end: 21;
     grid-row-start: 14;
@@ -128,7 +128,7 @@
     border-right: 2px solid black;
 }
 
-.tens-carry-over {
+.tens-carryover {
     grid-column-start: 21;
     grid-column-end: 31;
     grid-row-start: 14;
@@ -136,7 +136,7 @@
     border-right: 2px solid black;
 }
 
-.units-carry-over {
+.units-carryover {
     grid-column-start: 31;
     grid-column-end: 41;
     grid-row-start: 14;
@@ -193,9 +193,6 @@
 
 .item-ten {
     border-right: 2px solid black;
-}
-.reset-button {
-
 }
 
 
