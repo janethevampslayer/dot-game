@@ -481,7 +481,7 @@
         <div class="thousands-carryover"><input type="text" name="thousands-carryover" class="single-unit" size="1"></div>
         <div class="hundreds-carryover"><input type="text" name="hundreds-carryover" class="single-unit" size="1"></div>
         <div class="tens-carryover"><input type="text" name="tens-carryover" class="single-unit" size="1"></div>
-        <div class="units-carryover"><input type="text" name="units-carryover" class="single-unit"size="1"></div>
+        <div class="units-carryover"></div>
         <div class="blank-foot"></div>
 
         <div class="thousands-total"><input type="text" name="thousands-total" class="single-unit" size="1"></div>
@@ -497,8 +497,7 @@
 <form onsubmit="return false">
     <button type="button" class="reset-button" id="reset-button">reset</button><button type="submit" class="check-answer-button" id="check-answer-button">check answer</button>
 </form>
-
-<p hidden th:text="${sum}" class="sum"></p>
+ <form th:method="post"><input type="hidden" th:field="${newGame.addendOne}" ><input type="hidden" th:field="${newGame.addendTwo}"><input type="hidden" th:field="${newGame.sum}"><button type="submit" id="save-button">save game</button></form>
 </body>
 <script src="script.js"></script>
 </html>
