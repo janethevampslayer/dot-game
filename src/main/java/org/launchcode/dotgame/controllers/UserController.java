@@ -1,5 +1,6 @@
 package org.launchcode.dotgame.controllers;
 
+import org.launchcode.dotgame.data.GameRepository;
 import org.launchcode.dotgame.data.UserRepository;
 import org.launchcode.dotgame.models.Game;
 import org.launchcode.dotgame.models.User;
@@ -20,6 +21,9 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private GameRepository gameRepository;
+
     @GetMapping("home")
     public String displayUserHome(HttpSession session, Model model) {
         Object userId = session.getAttribute("user");
@@ -31,11 +35,12 @@ public class UserController {
 
     @GetMapping("savedGames")
     public String displaySavedGames(HttpSession session, Model model) {
-        List<Game> savedGames = new ArrayList<>();
         Object userId = session.getAttribute("user");
         Optional<User> result = userRepository.findById((Integer) userId);
         User user = result.get();
+        List<Game> savedGames = user.getGames();
         model.addAttribute("username", user.getUsername() + "'s saved games");
+        model.addAttribute("games", savedGames);
         return "user/saved-games";
     }
 }

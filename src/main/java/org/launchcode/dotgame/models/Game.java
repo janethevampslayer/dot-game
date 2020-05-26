@@ -12,7 +12,6 @@ public class Game {
     int id;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
     public User user;
 
     Random rand = new Random();

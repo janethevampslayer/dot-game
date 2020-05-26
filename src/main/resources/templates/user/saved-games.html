@@ -2,10 +2,18 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8"/>
+    <link href="saved-games.css" rel="stylesheet">
     <title></title>
 </head>
 <body>
 <p th:text="${username}"></p>
 
+<table>
+    <th:block th:each="game : ${games}">
+        <tr>
+            <td class="saved-sums" th:text="${game.sum}"></td>
+        </tr>
+    </th:block>
+</table>
 </body>
 </html>
