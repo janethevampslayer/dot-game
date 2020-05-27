@@ -46,12 +46,9 @@ var total = Number(addendOne) + Number(addendTwo);
 
 checkAnswer.addEventListener("click", function() {
     var input = Number(document.getElementById("answer").value);
-              console.log(total + input);
-
+              console.log(total);
               if (total == input) {
                 confirm("correct!");
-              } else {
-                console.log("silly button types");
               }
 })
 
