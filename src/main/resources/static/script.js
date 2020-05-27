@@ -1,27 +1,43 @@
-var dotItem = document.getElementsByClassName("dot");
+var gridItem = document.getElementsByClassName("grid-item")
 
-for (var i = 0; i < dotItem.length; i++) {
-    dotItem[i].addEventListener("click", function() {
-        if (this.style.backgroundColor != "black") {
-            this.style.backgroundColor = "black";
-        } else if (this.style.backgroundColor = "black"){
-            this.style.backgroundColor = "white";
+for (var i = 0; i < gridItem.length; i++) {
+    gridItem[i].addEventListener("click", function() {
+        if (this.style.color != "black") {
+            this.style.color = "black";
+        } else if (this.style.color === "black") {
+            this.style.color = "";
         }
     })
 }
 
+var itemTen = document.getElementsByClassName("item-ten")
+
+for (var i = 0; i < itemTen.length; i++) {
+    itemTen[i].addEventListener("click", function() {
+        if (this.style.color != "black") {
+            this.style.color = "black";
+        } else if (this.style.color === "black") {
+            this.style.color = "";
+        }
+    })
+}
+
+
 document.getElementById("reset-button").addEventListener("click", function() {
-    for (var i = 0; i < dotItem.length; i++) {
-        if (dotItem[i].style.backgroundColor = "black") {
-        dotItem[i].style.backgroundColor = "white";
+    for (var i = 0; i < gridItem.length; i++) {
+        if (gridItem[i].style.color === "black") {
+        gridItem[i].style.color = "white";
         }
     }
-//    for (var i = 0; i < itemTen.length; i++) {
-//            if (itemTen[i].style.backgroundColor = "black") {
-//            itemTen[i].style.backgroundColor = "";
-//            }
-//        }
+
+    for (var i = 0; i < itemTen.length; i++) {
+            if (itemTen[i].style.color === "black") {
+            itemTen[i].style.color = "white";
+            }
+        }
 })
+
+
 
 var checkAnswer = document.getElementById("check-answer-button");
 var addendOne = document.getElementById("addend-one").textContent;
@@ -40,28 +56,6 @@ checkAnswer.addEventListener("click", function() {
 })
 
 
-//var gridItem = document.getElementsByClassName("grid-item");
-//var itemTen = document.getElementsByClassName("item-ten");
-//
-//for (var i = 0; i < gridItem.length; i++) {
-//    gridItem[i].addEventListener("click", function() {
-//        if (this.style.backgroundColor != "black") {
-//            this.style.backgroundColor = "black";
-//        } else if (this.style.backgroundColor = "black") {
-//            this.style.backgroundColor = "";
-//        }
-//    })
-//}
-//
-//for (var i = 0; i < itemTen.length; i++) {
-//    itemTen[i].addEventListener("click", function() {
-//        if (this.style.backgroundColor != "black") {
-//            this.style.backgroundColor = "black";
-//        } else if (this.style.backgroundColor = "black") {
-//            this.style.backgroundColor = "";
-//        }
-//    })
-//}
 
 
 
