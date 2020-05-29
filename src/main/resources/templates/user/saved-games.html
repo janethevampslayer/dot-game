@@ -11,6 +11,10 @@
 <table>
     <th:block th:each="game : ${games}">
         <tr>
+            <td class="saved-sums" th:text="${game.addendOne}"></td>
+            <td class="operands"> + </td>
+            <td class="saved-sums" th:text="${game.addendTwo}"></td>
+            <td class="operands"> = </td>
             <td class="saved-sums" th:text="${game.sum}"></td>
         </tr>
     </th:block>
