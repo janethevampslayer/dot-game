@@ -1,5 +1,14 @@
+* {
+    font-family: Arial, Veranda, sans-serif:
+}
+
+div {
+    border-bottom: 2px solid black;
+}
+
 .saved-sums {
     font-size: 50px;
+    text-align: right;
 }
 
 .operands {

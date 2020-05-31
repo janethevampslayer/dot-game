@@ -6,16 +6,16 @@
     <title></title>
 </head>
 <body>
-<p th:text="${username}"></p>
+<h1 th:text="${username}"></h1>
 
 <table>
-    <th:block th:each="game : ${games}">
+    <th:block class="saved-game" th:each="game : ${games}">
         <tr>
             <td class="saved-sums" th:text="${game.addendOne}"></td>
             <td class="operands"> + </td>
             <td class="saved-sums" th:text="${game.addendTwo}"></td>
             <td class="operands"> = </td>
-            <td class="saved-sums" th:text="${game.sum}"></td>
+            <td class="saved-sums" th:text="${game.sum}"><hr /></td>
         </tr>
     </th:block>
 </table>

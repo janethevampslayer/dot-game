@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Veranda, sans-serif:
+}
+
 .grid-container {
     display: grid;
   /* 48 auto columns */
@@ -21,71 +25,50 @@
 
  .item-ten {
     color: white;
-     border-right: 2px solid black;
+    border-right: 2.5px solid black;
  }
 
-.thousands {
+.column-head {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-right: 2.5px solid black;
+    letter-spacing: .15em;
+
+}
+
+#thousands {
     grid-column-start: 1;
     grid-column-end: 11;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    border-right: 2px solid black;
+
 }
 
-.hundreds {
+#hundreds {
     grid-column-start: 11;
     grid-column-end: 21;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    border-right: 2px solid black;
 }
 
-.tens {
+#tens {
     grid-column-start: 21;
     grid-column-end: 31;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    border-right: 2px solid black;
 }
 
-.units {
+#units {
     grid-column-start: 31;
     grid-column-end: 41;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    border-right: 2px solid black;
 }
 
-.blank-head {
+#blank-head {
     grid-column-start: 41;
     grid-column-end: 49;
     grid-row-start: 1;
     grid-row-end: 4;
+    letter-spacing: .05em;
 }
 
-.addend-one {
+.addend {
     grid-column-start: 41;
     grid-column-end: 49;
-}
-
-.addend-two {
-    grid-column-start: 41;
-    grid-column-end: 49;
-}
-
-.addend-three {
-    grid-column-start: 41;
-    grid-column-end: 49;
-}
-
-.addend-four {
-    grid-column-start: 41;
-    grid-column-end: 49;
-}
-
-.addend-five {
-    grid-column-start: 41;
-    grid-column-end: 49;
+    letter-spacing: .15em;
 }
 
 .thousands-carryover {

@@ -1,0 +1,22 @@
+* {
+    font-family: Arial, Veranda, sans-serif:
+}
+
+h1 {
+    letter-spacing: .05em;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: pink;
+}
+

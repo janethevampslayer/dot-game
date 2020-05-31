@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8"/>
     <title></title>
+    <link href="login-register-home.css" rel="stylesheet">
 </head>
 <body>
-<p th:text="${username}">username</p>
-<a href="/newGame">New Game</a><br>
-<a href="/savedGames">Saved Games</a><br>
-<a href="">Demonstration</a><br>
-<a href="">Logout</a>
+<h1 th:text="${username}">username</h1>
+<div>
+    <a href="/newGame">New Game</a><br>
+    <a href="/savedGames">Saved Games</a><br>
+    <a href="">Demonstration</a><br>
+    <a href="">Logout</a>
+</div>
+
 
 </body>
 </html>
