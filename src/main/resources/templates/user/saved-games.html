@@ -8,16 +8,16 @@
 <body>
 <h1 th:text="${username}"></h1>
 
-<table>
     <th:block class="saved-game" th:each="game : ${games}">
-        <tr>
-            <td class="saved-sums" th:text="${game.addendOne}"></td>
-            <td class="operands"> + </td>
-            <td class="saved-sums" th:text="${game.addendTwo}"></td>
-            <td class="operands"> = </td>
-            <td class="saved-sums" th:text="${game.sum}"><hr /></td>
-        </tr>
+        <table>
+            <tr>
+                <td class="saved-sums" th:text="${game.addendOne}"></td>
+                <td class="operands"> + </td>
+                <td class="saved-sums" th:text="${game.addendTwo}"></td>
+                <td class="operands"> = </td>
+                <td class="saved-sums" th:text="${game.sum}"></td>
+            </tr>
+        </table>
     </th:block>
-</table>
 </body>
 </html>

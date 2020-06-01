@@ -2,15 +2,18 @@
     font-family: Arial, Veranda, sans-serif:
 }
 
-div {
-    border-bottom: 2px solid black;
-}
-
 .saved-sums {
     font-size: 50px;
     text-align: right;
 }
 
 .operands {
-    font-size: 50px;
+    font-size: 35px;
+}
+
+table {
+    border-width: 2px;
+    border-style: dashed;
+    padding: 4px;
+    margin: 4px;
 }
