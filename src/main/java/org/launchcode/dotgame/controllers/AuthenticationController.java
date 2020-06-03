@@ -123,9 +123,9 @@ public class AuthenticationController {
         return "redirect:/home";
     }
 
-    @GetMapping("/logout")
+    @GetMapping("user/logout")
     public String logout(HttpServletRequest request) {
         request.getSession().invalidate();
-        return "redirect:/login";
+        return "user/logout";
     }
 }
