@@ -6,18 +6,23 @@
     <title></title>
 </head>
 <body>
-<h1 th:text="${username}"></h1>
-
+<div class="page">
+    <h1 th:text="${username}"></h1>
     <th:block class="saved-game" th:each="game : ${games}">
-        <table>
-            <tr>
-                <td class="saved-sums" th:text="${game.addendOne}"></td>
-                <td class="operands"> + </td>
-                <td class="saved-sums" th:text="${game.addendTwo}"></td>
-                <td class="operands"> = </td>
-                <td class="saved-sums" th:text="${game.sum}"></td>
-            </tr>
-        </table>
+        <div class="equations">
+            <table>
+                <th>
+                    <tr>
+                        <td class="saved-sums" th:text="${game.addendOne}"></td>
+                        <td class="operands"> + </td>
+                        <td class="saved-sums" th:text="${game.addendTwo}"></td>
+                        <td class="operands"> = </td>
+                        <td class="saved-sums" th:text="${game.sum}"></td>
+                    </tr>
+                </th>
+            </table>
+        </div>
     </th:block>
+</div>
 </body>
 </html>

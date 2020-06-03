@@ -2,6 +2,11 @@
     font-family: Arial, Veranda, sans-serif:
 }
 
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .grid-container {
     display: grid;
   /* 48 auto columns */
@@ -166,15 +171,15 @@
     margin: 5px auto 5px auto;
 }
 
-/* #circle {
-    width: 20em;
-    background-color: black;
-    border: 5px solid black;
-    padding: 0px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-} */
+#addend-one {
+    text-align: right;
+}
+
+#addend-two {
+    text-align: right;
+}
+
+
 
 
 

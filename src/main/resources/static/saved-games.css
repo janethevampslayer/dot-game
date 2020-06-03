@@ -2,6 +2,19 @@
     font-family: Arial, Veranda, sans-serif:
 }
 
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page {
+    font-size: 150%;
+    width: 800px;
+    margin: 100px auto 100px auto;
+    padding: 40px 10px 40 px 20px;
+    text-align: center;
+}
+
 .saved-sums {
     font-size: 50px;
     text-align: right;
@@ -12,8 +25,15 @@
 }
 
 table {
+    width: 400px;
+    margin: 20px auto 20px auto;
     border-width: 2px;
     border-style: dashed;
-    padding: 4px;
-    margin: 4px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.equations {
+    float: left;
+    display: inline-block;
 }

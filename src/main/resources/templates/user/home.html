@@ -6,12 +6,17 @@
     <link href="login-register-home.css" rel="stylesheet">
 </head>
 <body>
-<h1 th:text="${username}">username</h1>
-<div>
-    <a href="/newGame">New Game</a><br>
-    <a href="/savedGames">Saved Games</a><br>
-    <a href="">Demonstration</a><br>
-    <a href="">Logout</a>
+<div class="page">
+    <h1 th:text="${username}">username</h1>
+    <nav>
+        <div id="menu">
+            <a href="/newGame">New Game</a><br>
+            <a href="/savedGames">Saved Games</a><br>
+            <a href="">Demonstration</a><br>
+            <a href="">Logout</a>
+        </div>
+    </nav>
+
 </div>
 
 

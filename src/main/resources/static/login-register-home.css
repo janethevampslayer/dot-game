@@ -2,8 +2,27 @@
     font-family: Arial, Veranda, sans-serif:
 }
 
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page {
+    font-size: 150%;
+    width:600px;
+    margin: 200px auto 200px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #E6D7D2;
+}
+
 h1 {
+    text-align: center;
     letter-spacing: .05em;
+}
+
+#menu {
+    line-height: 1.4em;
 }
 
 a:link {
@@ -17,6 +36,15 @@ a:visited {
 }
 
 a:hover {
-    color: pink;
+    font-style: italic;
 }
+
+#login-form {
+
+}
+
+#submit {
+    text-align: right;
+}
+
 

@@ -6,23 +6,26 @@
     <link href="login-register-home.css" rel="stylesheet">
 </head>
 <body>
-<h1>The Dot Game</h1>
-<form th:method="post">
-    <div>
-        <label th:for="username">Username:
-            <input th:field="${loginFormDTO.username}">
-        </label>
-        <p class="error" th:errors="${loginFormDTO.username}"></p>
-    </div>
-    <div>
-        <label>Password:
-            <input th:field="${loginFormDTO.password}" type="password">
-        </label>
-        <p class="error" th:errors="${loginFormDTO.password}"></p>
-    </div>
-    <input type="submit" value="Log In">
+<div class="page">
+    <h1>The Dot Game</h1>
+    <form id="login-form" th:method="post">
+        <div>
+            <label th:for="username">Username:
+                <input th:field="${loginFormDTO.username}">
+            </label>
+            <p class="error" th:errors="${loginFormDTO.username}"></p>
+        </div>
+        <div>
+            <label>Password:
+                <input th:field="${loginFormDTO.password}" type="password">
+            </label>
+            <p class="error" th:errors="${loginFormDTO.password}"></p>
+        </div>
+        <input id="submit" type="submit" value="Log In">
 
-    <p>Don't have an account? <a href="/register">Register for one.</a></p>
-</form>
+        <p>Don't have an account? <a href="/register">Register for one.</a></p>
+    </form>
+</div>
+
 </body>
 </html>
