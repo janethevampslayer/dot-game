@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link href="saved-games.css" rel="stylesheet">
+    <script src="script.js"></script>
     <title>The Dot Game</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
     <div>
     <th:block class="saved-game" th:each="game : ${games}">
         <div class="equations">
-            <table>
+            <table id="print-table">
                 <th>
                     <tr>
                         <td class="saved-sums" th:text="${game.addendOne}"></td>
@@ -25,9 +26,7 @@
         </div>
     </th:block>
 </div>
-    <form>
-        <button/>Print</button>
-    </form>
+    <button id="print-button" onclick="window.print();return false;" />Print</button>
     </div>
 </body>
 </html>

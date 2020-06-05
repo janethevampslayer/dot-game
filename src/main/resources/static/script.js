@@ -1,4 +1,4 @@
-var gridItem = document.getElementsByClassName("grid-item")
+var gridItem = document.getElementsByClassName("grid-item");
 
 for (var i = 0; i < gridItem.length; i++) {
     gridItem[i].addEventListener("click", function() {
@@ -10,7 +10,7 @@ for (var i = 0; i < gridItem.length; i++) {
     })
 }
 
-var itemTen = document.getElementsByClassName("item-ten")
+var itemTen = document.getElementsByClassName("item-ten");
 
 for (var i = 0; i < itemTen.length; i++) {
     itemTen[i].addEventListener("click", function() {
@@ -51,8 +51,6 @@ checkAnswer.addEventListener("click", function() {
                 confirm("correct!");
               }
 })
-
-
 
 
 

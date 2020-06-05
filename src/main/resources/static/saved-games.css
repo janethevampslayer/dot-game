@@ -10,7 +10,7 @@ body {
 .page {
     font-size: 150%;
     width: 800px;
-    margin: 100px auto 100px auto;
+    margin: auto;
     padding: 40px 10px 40px 20px;
     text-align: center;
 }
@@ -33,10 +33,7 @@ table {
 }
 
 .equations {
-    float: right;
+    float: left;
     display: inline-block;
 }
 
-button {
-    float: center;
-}
