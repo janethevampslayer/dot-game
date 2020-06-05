@@ -8,6 +8,7 @@
 <body>
 <div class="page">
     <h1 th:text="${username}"></h1>
+    <div>
     <th:block class="saved-game" th:each="game : ${games}">
         <div class="equations">
             <table>
@@ -24,5 +25,9 @@
         </div>
     </th:block>
 </div>
+    <form>
+        <button/>Print</button>
+    </form>
+    </div>
 </body>
 </html>

@@ -36,3 +36,7 @@ table {
     float: right;
     display: inline-block;
 }
+
+button {
+    float: center;
+}
