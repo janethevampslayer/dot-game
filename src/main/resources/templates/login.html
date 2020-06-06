@@ -17,13 +17,13 @@
     <form id="login-form" th:method="post">
         <div>
             <label th:for="username">Username:
-                <input th:field="${loginFormDTO.username}">
+                <input class="field-box" th:field="${loginFormDTO.username}">
             </label>
             <p class="error" th:errors="${loginFormDTO.username}"></p>
         </div>
         <div>
             <label>Password:
-                <input th:field="${loginFormDTO.password}" type="password">
+                <input class="field-box" th:field="${loginFormDTO.password}" type="password">
             </label>
             <p class="error" th:errors="${loginFormDTO.password}"></p>
         </div>

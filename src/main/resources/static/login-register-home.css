@@ -107,3 +107,10 @@ button:hover:after {
 #register {
   width: 20%;
 }
+
+.field-box {
+  margin: 6px;
+  padding: 6px;
+  width: 25%;
+  border: none;
+}
