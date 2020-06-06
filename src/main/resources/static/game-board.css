@@ -1,10 +1,11 @@
 * {
-    font-family: Arial, Veranda, sans-serif:
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
     width: 90%;
     margin: 0 auto;
+    background-color: #fff0f5;
 }
 
 .grid-container {
@@ -15,15 +16,11 @@ body {
     background-color: black;
     padding: 2px;
     width:75em;
-    margin: 10px auto 10px auto;
+    margin: 20px auto 10px auto;
     /* shadow */
     -moz-box-shadow: 0 0 15px #777777;
     -webkit-box-shadow: 0 0 15px #777777;
     box-shadow: 0 0 15px #777777;
-    /* border-radius
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    webkit-border-radius: 10px; */
  }
 
 .grid-container > div {
@@ -179,6 +176,40 @@ body {
     text-align: right;
 }
 
+a:link, a:visited {
+  background-color:#efefef;
+  color: black;
+  margin: 5px;
+  width: 50%;
+  padding: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -moz-box-shadow: 0 2px 0 black;
+  -webkit-box-shadow: 0 2px 0 black;
+  box-shadow: 0 2px 0 black;
+  border-radius: 10px;
+  font-size: 18px;
+
+}
+
+a:hover {
+  font-style: oblique;
+  background-color: #efefef;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    -moz-box-shadow: 0 2px 0 black;
+    -webkit-box-shadow: 0 2px 0 black;
+    box-shadow: 0 2px 0 black;
+    font-size: 16px;
+
+}
 
 
 

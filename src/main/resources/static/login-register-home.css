@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Veranda, sans-serif:
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
 }
 
 .page {
+    border-radius: 10px;
     font-size: 150%;
     width:600px;
     margin: 200px auto 200px auto;
@@ -23,6 +24,8 @@ body {
 h1 {
     text-align: center;
     letter-spacing: .05em;
+    font-family: 'Dancing Script', cursive;
+
 }
 
 #menu {
@@ -33,30 +36,33 @@ a:link, a:visited {
   background-color:#efefef;
   color: black;
   margin: 5px;
-  width: 30%;
+  width: 50%;
   padding: auto;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  -moz-box-shadow: 0 2px 0 #777777;
-  -webkit-box-shadow: 0 2px 0 #777777;
-  box-shadow: 0 2px 0 #777777;
+  -moz-box-shadow: 0 2px 0 black;
+  -webkit-box-shadow: 0 2px 0 black;
+  box-shadow: 0 2px 0 black;
   border-radius: 10px;
+  font-size: 18px;
+
 }
 
 a:hover {
   font-style: oblique;
   background-color: #efefef;
-  opacity: 0.4;
+  opacity: 0.8;
   cursor: pointer;
 }
 
 .button {
     border: none;
     border-radius: 10px;
-    -moz-box-shadow: 0 2px 0 #777777;
-    -webkit-box-shadow: 0 2px 0 #777777;
-    box-shadow: 0 2px 0 #777777;
+    -moz-box-shadow: 0 2px 0 black;
+    -webkit-box-shadow: 0 2px 0 black;
+    box-shadow: 0 2px 0 black;
+    font-size: 16px;
 }
 
 #login-form {

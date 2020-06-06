@@ -1,5 +1,12 @@
 * {
-    font-family: Arial, Veranda, sans-serif:
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: .05em;
+    font-family: 'Dancing Script', cursive;
+
 }
 
 body {

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <link href="game-board.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
     <title>The Dot Game</title>
 </head>
 <body>
@@ -261,14 +263,14 @@
     <div class="form">
         <a href="/home">Home</a>
         <form onsubmit="return false">
-            <button type="button" class="reset-button" id="reset-button">reset</button>
-            <button type="submit" class="check-answer-button" id="check-answer-button">check answer</button>
+            <button type="button" class="button" id="reset-button">reset</button>
+            <button type="submit" class="button" id="check-answer-button">check answer</button>
         </form>
         <form th:method="post">
             <input type="hidden" th:field="${newGame.addendOne}" >
             <input type="hidden" th:field="${newGame.addendTwo}">
             <input type="hidden" th:field="${newGame.sum}">
-            <button type="submit" id="save-button">save game</button>
+            <button class="button"type="submit" id="save-button">save game</button>
         </form>
     </div>
 </div>
