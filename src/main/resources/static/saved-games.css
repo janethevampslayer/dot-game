@@ -44,11 +44,57 @@ table {
     display: inline-block;
 }
 
-.button {
+button {
+    width: 60%;
+    margin: 5px;
+    padding: 8px;
+    background-color: lavenderblush
+    color: black;
     border: none;
-    border-radius: 10px;
-    -moz-box-shadow: 0 2px 0 black;
-    -webkit-box-shadow: 0 2px 0 black;
-    box-shadow: 0 2px 0 black;
+    box-shadow: 1px 1px 0px black;
+    border-radius: 4px;
+    transition: .6s;
     font-size: 16px;
+    overflow: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:before {
+  content: '';
+  display: block;
+  position:absolute;
+  opacity: .5s;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+}
+
+button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) skewX(-15deg);
+}
+
+button:hover {
+  background-color: lavenderblush;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 2px 2px 0px black;
+}
+
+button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .6;
+  transition: .7s;
+}
+
+button:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .1;
+  transition: .7s;
 }
