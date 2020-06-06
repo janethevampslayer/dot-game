@@ -176,7 +176,7 @@ form {
   margin: 4px auto 4px auto;
 }
 
-button {
+.button {
     width: 20%;
     margin: 5px;
     padding: 8px;
@@ -190,11 +190,11 @@ button {
     overflow: hidden;
 }
 
-button:focus {
+.button:focus {
   outline: none;
 }
 
-button:before {
+.button:before {
   content: '';
   display: block;
   position:absolute;
@@ -203,7 +203,7 @@ button:before {
   transform: translateX(-130px) skewX(-15deg);
 }
 
-button:after {
+.button:after {
   content: '';
   display: block;
   position: absolute;
@@ -212,20 +212,20 @@ button:after {
   transform: translate(-100px) skewX(-15deg);
 }
 
-button:hover {
+.button:hover {
   background-color: #e6d7d2;
   cursor: pointer;
   font-weight: bold;
   box-shadow: 2px 2px 0px #777777;
 }
 
-button:hover:before {
+.button:hover:before {
   transform: translateX(300px) skewX(-15deg);
   opacity: .6;
   transition: .7s;
 }
 
-button:hover:after {
+.button:hover:after {
   transform: translateX(300px) skewX(-15deg);
   opacity: .1;
   transition: .7s;
@@ -234,5 +234,13 @@ button:hover:after {
 .tool-bar {
   width:75em;
   margin: 5px auto 5px auto;
+}
+
+.nav-bar {
+
+}
+
+.nav-item {
+
 }
 
