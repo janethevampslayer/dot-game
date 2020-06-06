@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="page">
-<h1>Create a new account to play The Dot Game.</h1>
+<h1>Create a new account:</h1>
 <form th:method="post">
     <div>
         <label>Username:
@@ -26,7 +26,7 @@
             <input th:field="${registerFormDTO.verifyPassword}" type="password">
         </label>
     </div>
-    <a href="/login">Back</a><input href="/login" type="submit" value="Register">
+    <a href="/login">Back</a><input class="button" href="/login" type="submit" value="Register">
 </form>
 </div>
 </body>

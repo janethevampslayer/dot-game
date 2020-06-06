@@ -29,18 +29,34 @@ h1 {
     line-height: 1.4em;
 }
 
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-    text-decoration: none;
+a:link, a:visited {
+  background-color:#efefef;
+  color: black;
+  margin: 5px;
+  width: 30%;
+  padding: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -moz-box-shadow: 0 2px 0 #777777;
+  -webkit-box-shadow: 0 2px 0 #777777;
+  box-shadow: 0 2px 0 #777777;
+  border-radius: 10px;
 }
 
 a:hover {
-    font-style: italic;
+  font-style: oblique;
+  background-color: #efefef;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    -moz-box-shadow: 0 2px 0 #777777;
+    -webkit-box-shadow: 0 2px 0 #777777;
+    box-shadow: 0 2px 0 #777777;
 }
 
 #login-form {
