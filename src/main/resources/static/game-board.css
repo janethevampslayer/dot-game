@@ -16,7 +16,7 @@ body {
     background-color: black;
     padding: 2px;
     width:75em;
-    margin: 20px auto 10px auto;
+    margin: 20px auto 0px auto;
     /* shadow */
     -moz-box-shadow: 0 0 15px #777777;
     -webkit-box-shadow: 0 0 15px #777777;
@@ -163,11 +163,6 @@ body {
     grid-row-end: 14;
 }
 
-.form {
-    width: 500px;
-    margin: 5px auto 5px auto;
-}
-
 #addend-one {
     text-align: right;
 }
@@ -176,14 +171,19 @@ body {
     text-align: right;
 }
 
+form {
+  width: 100%;
+  margin: 4px auto 4px auto;
+}
+
 button {
-    width: 60%;
+    width: 20%;
     margin: 5px;
     padding: 8px;
-    background-color: lavenderblush
+    background-color: #e6d7d2;
     color: black;
     border: none;
-    box-shadow: 1px 1px 0px black;
+    box-shadow: 1px 1px 0px #777777;
     border-radius: 4px;
     transition: .6s;
     font-size: 16px;
@@ -213,10 +213,10 @@ button:after {
 }
 
 button:hover {
-  background-color: lavenderblush;
+  background-color: #e6d7d2;
   cursor: pointer;
   font-weight: bold;
-  box-shadow: 2px 2px 0px black;
+  box-shadow: 2px 2px 0px #777777;
 }
 
 button:hover:before {
@@ -231,4 +231,8 @@ button:hover:after {
   transition: .7s;
 }
 
+.tool-bar {
+  width:75em;
+  margin: 5px auto 5px auto;
+}
 
