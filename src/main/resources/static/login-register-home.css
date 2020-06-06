@@ -32,7 +32,7 @@ h1 {
     line-height: 1.4em;
 }
 
-a:link, a:visited {
+/*a:link, a:visited {
   background-color:#efefef;
   color: black;
   margin: 5px;
@@ -54,7 +54,7 @@ a:hover {
   background-color: #efefef;
   opacity: 0.8;
   cursor: pointer;
-}
+}*/
 
 .button {
     border: none;

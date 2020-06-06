@@ -27,9 +27,10 @@
             </label>
             <p class="error" th:errors="${loginFormDTO.password}"></p>
         </div>
-        <input class="button" id="submit" type="submit" value="Log In">
+        <!--<input class="button" id="submit" type="submit" value="Log In"> -->
+        <button class="button" id="submit" type="submit">Login</button>
 
-        <p>Don't have an account? <a href="/register">Create a new account.</a></p>
+        <p>Don't have an account? <a href="/register"><button class="button" type="button">Create a new account.</button></a></p>
     </form>
 </div>
 
