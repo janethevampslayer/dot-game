@@ -43,4 +43,9 @@ public class UserController {
         model.addAttribute("games", savedGames);
         return "user/saved-games";
     }
+
+    @GetMapping("demonstration")
+    public String displayDemonstration() {
+        return "/demonstration";
+    }
 }
