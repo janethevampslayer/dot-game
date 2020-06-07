@@ -239,13 +239,29 @@ form {
 }
 
 .nav-bar {
+  width:75em;
   margin: 10px;
 }
 
 .nav-item {
+  padding: 4px 4px 2px 4px;
+  margin: 5px 10px 5px 10px;
   border: none;
   background-color: #fff0f5;
   font-size: 16px;
+  border-radius: 4px;
+}
+
+.nav-item:focus {
+  outline: none;
+}
+
+.nav-item:hover {
+  background-color: #fff0f5 ;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 1px 1px 0px #777777;
+  font-weight: bolder;
 }
 
 input {
@@ -261,3 +277,25 @@ input {
     padding: 100px 100px 100px 100px;
     text-align: center;
 }
+
+/*
+.nav-item {
+  margin: 5px 10px 5px 10px;
+  border: none;
+  background-color: #fff0f5;
+  font-size: 16px;
+}
+
+.nav-item:focus {
+  outline: none;
+}
+
+.nav-item:hover {
+  background-color: #fff0f5 ;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 1px 1px 0px #777777;
+  font-weight: bolder;
+}
+
+*/
