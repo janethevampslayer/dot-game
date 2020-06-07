@@ -87,10 +87,6 @@ button:hover:after {
   transition: .7s;
 }
 
-#login-form {
-
-}
-
 #submit {
     text-align: center;
     width: 18%
@@ -115,3 +111,7 @@ button:hover:after {
   border: none;
 }
 
+input:focus {
+  border: 1px solid black;
+  outline: none;
+}
