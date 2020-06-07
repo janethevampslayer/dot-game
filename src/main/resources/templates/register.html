@@ -14,7 +14,7 @@
 <form th:method="post">
     <div>
         <label>Username:
-            <input class="field-box" th:field="${registerFormDTO.username}">
+            <input class="field-box" th:field="${registerFormDTO.username}" autofocus>
         </label>
         <p class="error" th:errors="${registerFormDTO.username}"></p>
     </div>
