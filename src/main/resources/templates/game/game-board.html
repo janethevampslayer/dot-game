@@ -270,10 +270,10 @@
     <div class="tool-bar">
         <form onsubmit="return false">
             <button type="button" class="button" id="reset-button">reset</button>
-            <button class="button"type="submit" id="save-button">save game</button>
             <button type="submit" class="button" id="check-answer-button">check answer</button>
         </form>
         <form th:method="post">
+            <button class="button"type="submit" id="save-button">save game</button>
             <input type="hidden" th:field="${newGame.addendOne}" >
             <input type="hidden" th:field="${newGame.addendTwo}">
             <input type="hidden" th:field="${newGame.sum}">
