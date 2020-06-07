@@ -33,12 +33,14 @@ body {
  .grid-item {
     color: white;
     margin: 0px;
+    cursor: pointer;
  }
 
  .item-ten {
     color: white;
     border-right: 2.5px solid black;
     margin: 0px;
+    cursor: pointer;
  }
 
 .column-head {
