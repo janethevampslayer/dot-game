@@ -238,7 +238,12 @@ form {
   margin: 5px auto 5px auto;
 }
 
+.nav-container {
+    text-align: center;
+}
+
 .nav-bar {
+  display: inline-block;
   width:75em;
   margin: 10px;
 }
@@ -248,7 +253,7 @@ form {
   margin: 5px 10px 5px 10px;
   border: none;
   background-color: #fff0f5;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 4px;
 }
 
