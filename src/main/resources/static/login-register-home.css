@@ -115,3 +115,8 @@ input:focus {
   border: 1px solid black;
   outline: none;
 }
+
+.error {
+  font-style: italic;
+  color: red;
+}

@@ -14,19 +14,19 @@
 <form th:method="post">
     <div>
         <label>Username:
-            <input th:field="${registerFormDTO.username}">
+            <input class="field-box" th:field="${registerFormDTO.username}">
         </label>
         <p class="error" th:errors="${registerFormDTO.username}"></p>
     </div>
     <div>
         <label>Password:
-            <input th:field="${registerFormDTO.password}" type="password">
+            <input class="field-box" th:field="${registerFormDTO.password}" type="password">
         </label>
         <p class="error" th:errors="${registerFormDTO.password}"></p>
     </div>
     <div>
         <label>Verify Password:
-            <input th:field="${registerFormDTO.verifyPassword}" type="password">
+            <input class="field-box" th:field="${registerFormDTO.verifyPassword}" type="password">
         </label>
     </div>
     <a href="/login"><button class="button" type="button" id="back">Back</button></a><button class="button" type="submit" id="register">Register</button>
