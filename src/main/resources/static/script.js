@@ -37,10 +37,8 @@ document.getElementById("reset-button").addEventListener("click", function() {
         }
 })
 
-var correctClose = document.getElementsByClassName("correct-close")[0];
-var incorrectClose = document.getElementsByClassName("incorrect-close")[0];
-var correctModal = document.getElementById("correct-modal");
-var incorrectModal = document.getElementById("incorrect-modal");
+var close = document.getElementsByClassName("close")[0];
+var modal = document.getElementById("modal");
 var checkAnswer = document.getElementById("check-answer-button");
 var addendOne = document.getElementById("addend-one").textContent;
 var addendTwo = document.getElementById("addend-two").textContent;
@@ -51,36 +49,31 @@ checkAnswer.addEventListener("click", function() {
               console.log(total);
               console.log(input);
               if (isNaN(input)) {
-                incorrectModal.style.display = "block";
+                document.querySelector(".modal-content p").textContent = "That is not a number. Please enter a number.";
+                modal.style.display = "block";
               } else if (input == 0) {
-                incorrectModal.style.display = "block";
+                document.querySelector(".modal-content p").textContent = "Please enter a number.";
+                modal.style.display = "block";
               } else if (total == input) {
-                correctModal.style.display = "block";
+                document.querySelector(".modal-content p").textContent = "Correct! If you would like to save this game, click the 'save game' button.";
+                modal.style.display = "block";
               } else if (total != input) {
-                incorrectModal.style.display = "block";
+                document.querySelector(".modal-content p").textContent = "Incorrect. Try again.";
+                modal.style.display = "block";
               }
 })
 
-correctClose.onclick = function() {
-  correctModal.style.display = "none";
-}
-
-incorrectClose.onclick = function() {
-  incorrectModal.style.display = "none";
+close.onclick = function() {
+  modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == correctModal) {
-    correctModal.style.display = "none";
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 
-window.onclick = function(event) {
-  if (event.target == incorrectModal) {
-    incorrectModal.style.display = "none";
-  }
-}
 
 
 

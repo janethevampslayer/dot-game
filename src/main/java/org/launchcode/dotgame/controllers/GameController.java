@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 import java.util.Optional;
 
 @Controller("/newGame")
@@ -38,6 +39,9 @@ public class GameController {
         User user = result.get();
         game.setUser(user);
         gameRepository.save(game);
-        return "user/home";
+        List<Game> savedGames = user.getGames();
+        model.addAttribute("username", user.getUsername() + "'s saved games");
+        model.addAttribute("games", savedGames);
+        return "user/saved-games";
     }
 }

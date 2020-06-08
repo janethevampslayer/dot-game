@@ -307,33 +307,24 @@ input:focus {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
 }
 
 /* The Close Button */
-.correct-close {
+.close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.correct-close:hover,
-.correct-close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.incorrect-close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.incorrect-close:hover,
-.incorrect-close:focus {
+.close:hover,
+.close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
