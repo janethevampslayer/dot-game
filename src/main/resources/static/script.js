@@ -39,6 +39,7 @@ document.getElementById("reset-button").addEventListener("click", function() {
 
 var close = document.getElementsByClassName("close")[0];
 var modal = document.getElementById("modal");
+var save = document.getElementById("save-button");
 var checkAnswer = document.getElementById("check-answer-button");
 var addendOne = document.getElementById("addend-one").textContent;
 var addendTwo = document.getElementById("addend-two").textContent;
@@ -56,7 +57,9 @@ checkAnswer.addEventListener("click", function() {
                 modal.style.display = "block";
               } else if (total == input) {
                 document.querySelector(".modal-content p").textContent = "Correct! If you would like to save this game, click the 'save game' button.";
+                save.style.display = "inline-block";
                 modal.style.display = "block";
+
               } else if (total != input) {
                 document.querySelector(".modal-content p").textContent = "Incorrect. Try again.";
                 modal.style.display = "block";
