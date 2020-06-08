@@ -37,8 +37,10 @@ document.getElementById("reset-button").addEventListener("click", function() {
         }
 })
 
-
-
+var correctClose = document.getElementsByClassName("correct-close")[0];
+var incorrectClose = document.getElementsByClassName("incorrect-close")[0];
+var correctModal = document.getElementById("correct-modal");
+var incorrectModal = document.getElementById("incorrect-modal");
 var checkAnswer = document.getElementById("check-answer-button");
 var addendOne = document.getElementById("addend-one").textContent;
 var addendTwo = document.getElementById("addend-two").textContent;
@@ -47,12 +49,38 @@ var total = Number(addendOne) + Number(addendTwo);
 checkAnswer.addEventListener("click", function() {
     var input = Number(document.getElementById("answer").value);
               console.log(total);
-              if (total == input) {
-                confirm("correct!");
+              console.log(input);
+              if (isNaN(input)) {
+                incorrectModal.style.display = "block";
+              } else if (input == 0) {
+                incorrectModal.style.display = "block";
+              } else if (total == input) {
+                correctModal.style.display = "block";
+              } else if (total != input) {
+                incorrectModal.style.display = "block";
               }
 })
 
+correctClose.onclick = function() {
+  correctModal.style.display = "none";
+}
 
+incorrectClose.onclick = function() {
+  incorrectModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == correctModal) {
+    correctModal.style.display = "none";
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target == incorrectModal) {
+    incorrectModal.style.display = "none";
+  }
+}
 
 
 
