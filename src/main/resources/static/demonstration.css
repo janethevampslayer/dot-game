@@ -3,8 +3,6 @@
 }
 
 body {
-     width: 90%;
-    margin: 0 auto;
     background-color: #fff0f5;
 }
 
@@ -56,7 +54,7 @@ h1 {
     font-size: 140%;
     width:600px;
     margin: 50px auto 50px auto;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     background-color: #E6D7D2;
     -moz-box-shadow: 0 0 15px #777777;
