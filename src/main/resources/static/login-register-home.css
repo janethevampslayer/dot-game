@@ -32,7 +32,7 @@ h1 {
     line-height: 1.4em;
 }
 
-button {
+.button {
     width: 60%;
     margin: 5px;
     padding: 8px;
@@ -46,11 +46,11 @@ button {
     overflow: hidden;
 }
 
-button:focus {
+.button:focus {
   outline: none;
 }
 
-button:before {
+.button:before {
   content: '';
   display: block;
   position:absolute;
@@ -59,7 +59,7 @@ button:before {
   transform: translateX(-130px) skewX(-15deg);
 }
 
-button:after {
+.button:after {
   content: '';
   display: block;
   position: absolute;
@@ -68,7 +68,7 @@ button:after {
   transform: translate(-100px) skewX(-15deg);
 }
 
-button:hover {
+.button:hover {
   background-color: lavenderblush;
   cursor: pointer;
   font-weight: bold;
@@ -81,7 +81,7 @@ button:hover:before {
   transition: .7s;
 }
 
-button:hover:after {
+.button:hover:after {
   transform: translateX(300px) skewX(-15deg);
   opacity: .1;
   transition: .7s;
@@ -119,4 +119,35 @@ input:focus {
 .error {
   font-style: italic;
   color: red;
+}
+
+.nav-container {
+    text-align: center;
+}
+
+.nav-bar {
+  display: inline-block;
+  width:75em;
+  margin: 10px;
+}
+
+.nav-item {
+  padding: 4px 4px 2px 4px;
+  margin: 5px 10px 5px 10px;
+  border: none;
+  background-color: #fff0f5;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.nav-item:focus {
+  outline: none;
+}
+
+.nav-item:hover {
+  background-color: #fff0f5 ;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 1px 1px 0px #777777;
+  font-weight: bolder;
 }
