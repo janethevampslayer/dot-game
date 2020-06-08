@@ -38,6 +38,9 @@ public class UserController {
         Optional<User> result = userRepository.findById((Integer) userId);
         User user = result.get();
         List<Game> savedGames = user.getGames();
+        if (savedGames.isEmpty()) {
+            model.addAttribute("noGames", "You have no saved games.");
+        }
         model.addAttribute("username", user.getUsername() + "'s saved games");
         model.addAttribute("games", savedGames);
         return "user/saved-games";
