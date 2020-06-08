@@ -275,16 +275,6 @@ input {
   font-size: bolder;
 }
 
-.video-container {
-    text-align: center;
-}
-
-.video {
-    font-size: 150%;
-    width: 100%;
-    padding: 100px;
-}
-
 input:focus {
   border: 2px solid black;
   outline: none;
