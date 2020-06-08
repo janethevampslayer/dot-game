@@ -56,7 +56,7 @@ checkAnswer.addEventListener("click", function() {
                 document.querySelector(".modal-content p").textContent = "Please enter a number.";
                 modal.style.display = "block";
               } else if (total == input) {
-                document.querySelector(".modal-content p").textContent = "Correct! If you would like to save this game, click the 'save game' button.";
+                document.querySelector(".modal-content p").textContent = "Correct! Would you like to save this game?";
                 save.style.display = "inline-block";
                 modal.style.display = "block";
 
