@@ -93,3 +93,7 @@ button:hover:after {
   opacity: .1;
   transition: .7s;
 }
+
+#save-button {
+    display: none;
+}
